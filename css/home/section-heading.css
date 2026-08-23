@@ -1,0 +1,45 @@
+.section-tag,
+.section-label,
+.portfolio-tag {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-pink-600);
+    margin-bottom: 0.85rem;
+}
+
+.section-tag::before,
+.portfolio-tag::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 2px;
+    background: var(--color-pink-300);
+    margin-right: 0.6rem;
+    border-radius: 2px;
+}
+
+.section-title,
+.section-heading h2,
+.about-intro h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.85rem, 3vw, 2.55rem);
+    line-height: 1.15;
+    color: var(--color-ink);
+    text-wrap: balance;
+}
+
+.section-heading {
+    max-width: 640px;
+    margin: 0 auto 3.25rem;
+    text-align: center;
+}
+
+.section-heading.compact {
+    margin-bottom: 2.75rem;
+}

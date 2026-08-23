@@ -1,0 +1,66 @@
+.cta-row {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.7rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-white);
+    background: rgb(15, 15, 15);
+    border: 1px solid rgb(116, 48, 82);
+    border-radius: 12px;
+    transition: transform var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+
+.primary-btn {
+    box-shadow: var(--shadow-sm);
+}
+
+.primary-btn:hover,
+.primary-btn:focus-visible {
+    background: rgb(20, 20, 20);
+    border-color: rgb(145, 67, 103);
+    transform: translateY(-2px);
+    box-shadow: none;
+}
+
+.primary-btn:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+}
+
+.secondary-btn {
+    border-color: rgb(116, 48, 82);
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus-visible {
+    background: rgb(20, 20, 20);
+    border-color: rgb(145, 67, 103);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+.secondary-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+    .cta-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        justify-content: center;
+    }
+}

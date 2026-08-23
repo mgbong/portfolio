@@ -1,0 +1,66 @@
+.contact-form {
+    width: min(100%, 560px);
+    justify-self: center;
+    background: transparent;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.4rem;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.form-field label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-pink-600);
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-ink);
+    background: var(--color-paper);
+    border: 1.5px solid var(--color-line-strong);
+    border-radius: var(--radius-sm);
+    padding: 0.6rem 0.85rem;
+    resize: vertical;
+    transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: var(--color-ink-soft);
+    opacity: 0.7;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+    outline: none;
+    border-color: var(--color-pink-500);
+    box-shadow: 0 0 0 3px var(--color-pink-100);
+}
+
+.form-submit {
+    align-self: flex-start;
+    border: none;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 640px) {
+    .form-submit {
+        align-self: stretch;
+        justify-content: center;
+    }
+}

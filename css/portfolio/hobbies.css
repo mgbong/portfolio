@@ -1,0 +1,17 @@
+.hobbies-section {
+    padding: clamp(1.5rem, 3vw, 2.5rem) var(--gutter) clamp(3rem, 5vw, 4rem);
+    border-top: 1px solid var(--color-line);
+}
+
+.hobbies-section .section-header {
+    margin-bottom: 1.5rem;
+}
+
+.hobbies-card {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.hobbies-card .skill-list--badges {
+    justify-content: center;
+}

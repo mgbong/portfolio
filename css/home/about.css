@@ -1,0 +1,103 @@
+.home-section {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 3rem) var(--gutter) clamp(4rem, 8vw, 6rem);
+}
+
+.home-intro {
+    text-align: left;
+}
+
+.home-intro .section-tag {
+    justify-content: flex-start;
+}
+
+.home-intro .section-title {
+    font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+}
+
+.home-intro .section-description {
+    margin-top: 1rem;
+    max-width: 34rem;
+    color: var(--color-ink-soft);
+    font-size: 0.98rem;
+    line-height: 1.7;
+    text-wrap: pretty;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+}
+
+.personal-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+}
+
+.info-pill {
+    background: var(--color-white);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-sm);
+    padding: 1.1rem 1.25rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+
+.info-pill:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-pink-300);
+    box-shadow: var(--shadow-hover);
+}
+
+.info-pill__label {
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-pink-500);
+    margin-bottom: 0.4rem;
+}
+
+.info-pill__value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-panel-ink);
+    line-height: 1.4;
+    text-wrap: balance;
+}
+
+@media (max-width: 1024px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .home-intro {
+        text-align: center;
+    }
+
+    .home-intro .section-tag {
+        justify-content: center;
+    }
+
+    .home-intro .section-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .personal-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .home-section {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}

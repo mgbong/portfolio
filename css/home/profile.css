@@ -1,0 +1,34 @@
+.profile-frame {
+    position: relative;
+    justify-self: center;
+    width: min(100%, 320px);
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: rgb(36, 32, 36);
+    border: 1px solid var(--color-line);
+    box-shadow: var(--shadow-md);
+}
+
+.profile-frame::before {
+    content: "";
+    position: absolute;
+    inset: -14%;
+    z-index: -1;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-pink-200) 0%, transparent 70%);
+    filter: blur(18px);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .profile-frame {
+        order: -1;
+        width: min(100%, 240px);
+    }
+}

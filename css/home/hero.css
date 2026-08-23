@@ -1,0 +1,88 @@
+.hero {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: clamp(3rem, 8vw, 6rem) var(--gutter) clamp(2.5rem, 6vw, 4rem);
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4.5rem);
+}
+
+.hero__text,
+.home-intro,
+.personal-info-grid,
+.project-card,
+.skill-category,
+.contact-box,
+.contact-form {
+    min-width: 0;
+}
+
+.hero__text {
+    max-width: 38rem;
+}
+
+.hero__greeting {
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 0.7rem;
+    color: var(--color-pink-500);
+}
+
+.hero__name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--color-ink);
+    text-wrap: balance;
+}
+
+.hero__name--accent {
+    display: inline-block;
+    font-style: italic;
+    color: var(--color-pink-500);
+}
+
+.hero__title {
+    margin-top: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.hero__title-prefix {
+    color: var(--color-pink-300);
+    font-weight: 700;
+}
+
+.hero__title-text {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+}
+
+.lead {
+    margin-top: 1.6rem;
+    max-width: 34rem;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.06rem;
+    line-height: 1.65;
+    color: #F8F4F7;
+    padding-left: 1.1rem;
+    border-left: 3px solid var(--color-pink-300);
+}
+
+@media (max-width: 1024px) {
+    .hero__container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,75 @@
+.contact-section {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: clamp(3rem, 6vw, 5rem) var(--gutter) clamp(5rem, 10vw, 7rem);
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    max-width: 760px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-item {
+    flex: 1 1 0;
+    background: transparent;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    padding: 1.5rem 1.75rem;
+    text-align: center;
+    box-shadow: none;
+    transition: transform var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+
+.contact-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-pink-300);
+    box-shadow: var(--shadow-hover);
+}
+
+.contact-item h3 {
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-pink-500);
+    margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+    font-family: var(--font-display);
+    font-size: 1.04rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    color: var(--color-ink);
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+
+.contact-item a:hover,
+.contact-item a:focus-visible {
+    border-color: var(--color-pink-500);
+    color: var(--color-pink-600);
+}
+
+@media (max-width: 860px) {
+    .contact-box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-section {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}

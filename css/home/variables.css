@@ -1,0 +1,32 @@
+:root {
+    color-scheme: dark;
+    --color-paper: rgb(0, 0, 0);
+    --color-paper-dim: rgb(17, 17, 17);
+    --color-white: rgb(255, 255, 255);
+    --color-ink: rgb(248, 244, 247);
+    --color-ink-soft: rgb(185, 176, 184);
+    --color-panel-ink: rgb(28, 26, 32);
+    --color-panel-ink-soft: rgb(114, 108, 120);
+    --color-line: rgb(43, 37, 43);
+    --color-line-strong: rgb(105, 54, 80);
+    --color-pink-50: rgb(253, 240, 247);
+    --color-pink-100: rgb(251, 220, 234);
+    --color-pink-200: rgb(247, 191, 221);
+    --color-pink-300: rgb(245, 160, 203);
+    --color-pink-500: rgb(236, 72, 153);
+    --color-pink-600: rgb(214, 53, 127);
+    --color-pink-700: rgb(176, 32, 99);
+    --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+    --font-body: "Nunito", "Segoe UI", Arial, sans-serif;
+    --max-width: 1180px;
+    --gutter: clamp(1.5rem, 4vw, 4rem);
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 22px;
+    --shadow-sm: 0 2px 10px rgba(169, 93, 112, 0.07);
+    --shadow-md: 0 18px 40px -24px rgba(42, 38, 48, 0.22);
+    --shadow-hover: 0 22px 48px -20px rgba(201, 123, 140, 0.35);
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --dur-fast: 180ms;
+    --dur-med: 380ms;
+}
