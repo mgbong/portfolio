@@ -11,6 +11,11 @@
     gap: 0.85rem;
 }
 
+.contact-form input,
+.contact-form textarea {
+    min-width: 0;
+}
+
 .form-field {
     display: flex;
     flex-direction: column;
