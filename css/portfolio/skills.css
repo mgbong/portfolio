@@ -44,12 +44,6 @@
     
 }
 
-.skill-category:hover {
-    transform: translateY(-4px);
-    border-color: var(--color-pink-300);
-    box-shadow: var(--shadow-hover);
-}
-
 .skill-category__header {
     margin-bottom: 1.4rem;
 }
@@ -80,12 +74,6 @@
     border: 1px solid var(--color-line-strong);
     padding: 0.5rem 1rem;
     border-radius: var(--radius-sm);
-}
-
-.skill-badge:hover {
-    border-color: var(--color-pink-500);
-    color: var(--color-white);
-    transform: translateY(-2px);
 }
 
 @media (max-width: 640px) {
